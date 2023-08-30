@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--link de style boostrap-->
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="border-bottom border-3 border-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid" style="padding-right: 13%;">
+          <a class="nav-link button" href="./index.html">
+            <div class="imgLogo"><img class="logo" src="rec/img/logos/logo5.png" alt=""></div>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar-nav nav nav-tabs me-auto mb-2 mb-lg-0" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                
+                  <button class="nav-link active" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true"><h5>Aserca de mi</h5></button>
+                
+                
+              </li>
+              <li class="nav-item" role="presentation">
+                <a class="nav-link " id="page-tab" data-bs-toggle="tab" data-bs-target="#page-tab-pane" type="button"
+                  role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                  <h5>Paginas</h5>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <!--<ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Index-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"> <div class="imgLogo"><img class="logo" src="rec/img/logos/logo5.png" alt=""></div></button>
+          </li>
+          <li class="nav-item position-absolute top-50 start-50 translate-middle" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Acerca de mi</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >disc</button>
+          </li>
+        </ul>
+      </nav>-->
+
+    </div>
+  </header>
+  <section>
+    <!--pestaña -->
+    <div class="container">
+      <div class="row">
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="card card-body" style="width: auto;">
+              <!--inicio de card de infomacion-->
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h3 class="card-title">Carlos Hernandez</h3>
+                      <h5> Carrera en proceso: Ingenieria en computacion:</h5>
+                      <p>Licenciatura en Ingenieria en computacion en la Facultad de Estudios Superiores Aragon</p>
+                      <p> <strong>Edad:</strong> 26 Años</p>
+                      <strong>Habilidades y Herramientas:</strong>
+                      <p class="card-text">
+                      <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item shadow">HTML</li>
+                        <li class="list-group-item shadow">CSS</li>
+                        <li class="list-group-item shadow">JavaScrip</li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal-sm">
+                        <li class="list-group-item">Blender</li>
+                        <li class="list-group-item">A-Frame</li>
+                        <li class="list-group-item">Unity</li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item">Mantenimiento computacional</li>
+                        <li class="list-group-item">Hardware </li>
+                        <li class="list-group-item">software</li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal-lg">
+                        <li class="list-group-item">MAntenimiento celular</li>
+                        <li class="list-group-item">Bootstrap</li>
+                        <li class="list-group-item"></li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal-xl">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal-xxl">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                      </ul>
+                      </p>
+                      <p><strong>Correo:</strong>carloshernandez@aragon.unam.mx</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="page-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            ...</div>
+          <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+            ...</div>
+        </div>
+
+        <div style="min-height: 250px;">
+          <!--pestaña acerca de mi-->
+          <div class="collapse collapse-horizontal" id="collapseYO">
+
+          </div>
+          <!--pestaña acerca de paginas-->
+          <div class="collapse collapse-horizontal" id="collapsePaginas">
+            <div class="card card-body" style="width: auto;">
+              This is some placeholder content for a horizontal collapse. It's hidden by default and shown when
+              triggered.
+            </div>
+          </div>
+          <!--pestaña visualizaciones-->
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <!--Final de pestaña -->
+  </section>
+
+  </section>
+  <footer></footer>
+
+  <!--link de script boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

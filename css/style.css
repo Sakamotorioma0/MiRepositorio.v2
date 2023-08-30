@@ -1,0 +1,12 @@
+.imgLogo{
+    font-size: 1rem;        
+}
+.logo{
+    width: 4rem;
+    height: auto;
+}
+.shadow :hover{
+    box-shadow: 1px;
+    scale: 4px;
+
+}
