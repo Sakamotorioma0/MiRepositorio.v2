@@ -5,8 +5,10 @@
     width: 4rem;
     height: auto;
 }
-.shadow :hover{
-    box-shadow: 1px;
-    scale: 4px;
 
+.sh:hover{
+    color: aliceblue;
+    background-color: rgb(29, 90, 1);
+    scale: 130%;
+    z-index: 1;
 }

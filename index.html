@@ -18,7 +18,7 @@
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid" style="padding-right: 13%;">
           <a class="nav-link button" href="./index.html">
-            <div class="imgLogo"><img class="logo" src="rec/img/logos/logo5.png" alt=""></div>
+            <div class="imgLogo "><img class="logo" src="rec/img/logos/logo5.png" alt=""></div>
           </a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,26 +29,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav navbar-nav nav nav-tabs me-auto mb-2 mb-lg-0" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
-                
-                  <button class="nav-link active" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true"><h5>Aserca de mi</h5></button>
-                
-                
+                <button class="nav-link active" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                  type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
+                  <h5>Acerca de mi</h5>
+                </button>
               </li>
               <li class="nav-item" role="presentation">
                 <a class="nav-link " id="page-tab" data-bs-toggle="tab" data-bs-target="#page-tab-pane" type="button"
-                  role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                  role="tab" aria-controls="page-tab-pane" aria-selected="true">
                   <h5>Paginas</h5>
                 </a>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="animaciones-tab" data-bs-toggle="tab"
+                  data-bs-target="#animaciones-tab-pane" type="button" role="tab" aria-controls="animaciones-tab-pane"
+                  aria-selected="false">Visualizaciones</button>
+
               </li>
 
             </ul>
-            <form class="d-flex">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+
           </div>
         </div>
 
@@ -76,13 +77,15 @@
       <div class="row">
 
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <!--Inicio  acerca de mi -->
+          <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+            tabindex="0">
             <div class="card card-body" style="width: auto;">
               <!--inicio de card de infomacion-->
               <div class="card mb-3">
                 <div class="row g-0">
                   <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="...">
+                    <img src="" class="img-fluid rounded-start" alt="...">
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
@@ -92,35 +95,35 @@
                       <p> <strong>Edad:</strong> 26 Años</p>
                       <strong>Habilidades y Herramientas:</strong>
                       <p class="card-text">
-                      <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item shadow">HTML</li>
-                        <li class="list-group-item shadow">CSS</li>
-                        <li class="list-group-item shadow">JavaScrip</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-sm">
-                        <li class="list-group-item">Blender</li>
-                        <li class="list-group-item">A-Frame</li>
-                        <li class="list-group-item">Unity</li>
+                      <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item sh ">HTML</li>
+                        <li class="list-group-item sh">CSS</li>
+                        <li class="list-group-item sh">JavaScrip</li>
                       </ul>
                       <ul class="list-group list-group-horizontal-md">
-                        <li class="list-group-item">Mantenimiento computacional</li>
-                        <li class="list-group-item">Hardware </li>
-                        <li class="list-group-item">software</li>
+                        <li class="list-group-item sh">Blender</li>
+                        <li class="list-group-item sh">A-Frame</li>
+                        <li class="list-group-item sh">Unity</li>
                       </ul>
-                      <ul class="list-group list-group-horizontal-lg">
-                        <li class="list-group-item">MAntenimiento celular</li>
-                        <li class="list-group-item">Bootstrap</li>
-                        <li class="list-group-item"></li>
+                      <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item sh">Mantenimiento computacional</li>
+                        <li class="list-group-item sh">Hardware </li>
+                        <li class="list-group-item sh">software</li>
                       </ul>
-                      <ul class="list-group list-group-horizontal-xl">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                      <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item sh">MAntenimiento celular</li>
+                        <li class="list-group-item sh">Bootstrap</li>
+                        <li class="list-group-item sh"></li>
                       </ul>
-                      <ul class="list-group list-group-horizontal-xxl">
-                        <li class="list-group-item">An item</li>
-                        <li class="list-group-item">A second item</li>
-                        <li class="list-group-item">A third item</li>
+                      <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item sh">An item</li>
+                        <li class="list-group-item sh">A second item</li>
+                        <li class="list-group-item sh">A third item</li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal-md">
+                        <li class="list-group-item sh">An item</li>
+                        <li class="list-group-item sh">A second item</li>
+                        <li class="list-group-item sh">A third item</li>
                       </ul>
                       </p>
                       <p><strong>Correo:</strong>carloshernandez@aragon.unam.mx</p>
@@ -131,9 +134,56 @@
               </div>
             </div>
           </div>
-          <div class="tab-pane fade" id="page-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-            ...</div>
-          <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+          <!--Inicio paginas -->
+          <div class="tab-pane fade" id="page-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0" align="center">
+            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding-top: 5%;">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card" style="min-width: 20rem; max-width:28rem ;">
+                    <img src="rec/img/paginas/cta.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>                 
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="min-width: 20rem;  max-width:28rem ;">
+                    <img src="rec/img/paginas/inventario.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="min-width: 20rem;  max-width:28rem ;">
+                    <img src="rec/img/paginas/Maketado.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="carousel-item">
+                  <div class="card" style="min-width: 20rem;  max-width:28rem ;">
+                    <img src="rec/img/paginas/PaginaDr.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>          
+          </div>
+          <!--Inicio  visualizaciones -->
+          <div class="tab-pane fade" id="animaciones-tab-pane" role="tabpanel" aria-labelledby="animaciones-tab"
+            tabindex="0">
             ...</div>
         </div>
 
