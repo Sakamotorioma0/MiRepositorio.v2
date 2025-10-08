@@ -2,230 +2,236 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-  <!--link de style boostrap-->
-  <link href="css/main.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+    <!--link de style boostrap-->
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="rec/img/logos/logo5.png" type="image/x-icon">
+
+
+    <!-- script de model 3D-->
+    <script type="module" src="js/model.js"></script>
+
 
 </head>
 
 <body>
-  <header class="border-bottom border-3 border-dark">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid" style="padding-right: 13%;">
-          <a class="nav-link button" href="./index.html">
-            <div class="imgLogo "><img class="logo" src="rec/img/logos/logo5.png" alt=""></div>
-          </a>
+    <header class="border-bottom border-3 border-dark">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid" style="padding-right: 13%;">
+                    <a class="nav-link button" href="./index.html">
+                        <div class="imgLogo "><img class="logo" src="rec/img/logos/logo5.png" alt=""></div>
+                    </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav navbar-nav nav nav-tabs me-auto mb-2 mb-lg-0" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                  type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav navbar-nav nav nav-tabs me-auto mb-2 mb-lg-0" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="perfil-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">
                   <h5>Acerca de mi</h5>
                 </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <a class="nav-link " id="page-tab" data-bs-toggle="tab" data-bs-target="#page-tab-pane" type="button"
-                  role="tab" aria-controls="page-tab-pane" aria-selected="true">
-                  <h5>Paginas</h5>
-                </a>
-              </li>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link " id="page-tab" data-bs-toggle="tab" data-bs-target="#page-tab-pane" type="button" role="tab" aria-controls="page-tab-pane" aria-selected="true">
+                                    <h5>Paginas</h5>
+                                </a>
+                            </li>
 
-              <li class="nav-item" role="presentation">
-                <button class="nav-link" id="animaciones-tab" data-bs-toggle="tab"
-                  data-bs-target="#animaciones-tab-pane" type="button" role="tab" aria-controls="animaciones-tab-pane"
-                  aria-selected="false">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="animaciones-tab" data-bs-toggle="tab" data-bs-target="#animaciones-tab-pane" type="button" role="tab" aria-controls="animaciones-tab-pane" aria-selected="false">
                   <h5>Visualizaciones</h5>
                 </button>
 
-              </li>
+                            </li>
 
-            </ul>
+                        </ul>
 
-          </div>
+                    </div>
+                </div>
+
         </div>
+    </header>
+    <section>
+        <!--pestaña -->
+        <div class="container">
+            <div class="row">
 
-        <!--<ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#Index-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"> <div class="imgLogo"><img class="logo" src="rec/img/logos/logo5.png" alt=""></div></button>
-          </li>
-          <li class="nav-item position-absolute top-50 start-50 translate-middle" role="presentation">
-            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Acerca de mi</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" >disc</button>
-          </li>
-        </ul>
-      </nav>-->
+                <div class="tab-content" id="myTabContent">
+                    <!--Inicio  acerca de mi -->
+                    <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="card card-body" style="width: auto;">
+                            <!--inicio de card de infomacion-->
+                            <div class="card mb-3">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title">Carlos Hernandez</h3>
+                                            <h5> Carrera en proceso: Ingenieria en computacion:</h5>
+                                            <p>Licenciatura en Ingenieria en computacion en la Facultad de Estudios Superiores Aragon</p>
+                                            <p> <strong>Edad:</strong> 28 Años</p>
+                                            <strong>Habilidades y Herramientas:</strong>
+                                            <p class="card-text">
+                                                <ul class="list-group list-group-horizontal-md">
+                                                    <li class="list-group-item sh ">HTML</li>
+                                                    <li class="list-group-item sh">CSS</li>
+                                                    <li class="list-group-item sh">JavaScrip</li>
+                                                </ul>
+                                                <ul class="list-group list-group-horizontal-md">
+                                                    <li class="list-group-item sh">Blender</li>
+                                                    <li class="list-group-item sh">A-Frame</li>
+                                                    <li class="list-group-item sh">Unity</li>
+                                                </ul>
+                                                <ul class="list-group list-group-horizontal-md">
+                                                    <li class="list-group-item sh">Mantenimiento computacional</li>
+                                                    <li class="list-group-item sh">Hardware </li>
+                                                    <li class="list-group-item sh">software</li>
+                                                </ul>
+                                                <ul class="list-group list-group-horizontal-md">
+                                                    <li class="list-group-item sh">Mantenimiento celular</li>
+                                                    <li class="list-group-item sh">Bootstrap</li>
+                                                    <li class="list-group-item sh">Blender</li>
+                                                </ul>
+                                            </p>
+                                            <p><strong>Correo:</strong><a class="text-decoration-none" href="mailto:carloshernandez131697@gmail.com"> carloshernandez131697@gmail.com</a></p>
 
-    </div>
-  </header>
-  <section>
-    <!--pestaña -->
-    <div class="container">
-      <div class="row">
+                                            <img class="logo" src="rec/img/logos/github.svg" alt="">
 
-        <div class="tab-content" id="myTabContent">
-          <!--Inicio  acerca de mi -->
-          <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-            tabindex="0">
-            <div class="card card-body" style="width: auto;">
-              <!--inicio de card de infomacion-->
-              <div class="card mb-3">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h3 class="card-title">Carlos Hernandez</h3>
-                      <h5> Carrera en proceso: Ingenieria en computacion:</h5>
-                      <p>Licenciatura en Ingenieria en computacion en la Facultad de Estudios Superiores Aragon</p>
-                      <p> <strong>Edad:</strong> 26 Años</p>
-                      <strong>Habilidades y Herramientas:</strong>
-                      <p class="card-text">
-                      <ul class="list-group list-group-horizontal-md">
-                        <li class="list-group-item sh ">HTML</li>
-                        <li class="list-group-item sh">CSS</li>
-                        <li class="list-group-item sh">JavaScrip</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-md">
-                        <li class="list-group-item sh">Blender</li>
-                        <li class="list-group-item sh">A-Frame</li>
-                        <li class="list-group-item sh">Unity</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-md">
-                        <li class="list-group-item sh">Mantenimiento computacional</li>
-                        <li class="list-group-item sh">Hardware </li>
-                        <li class="list-group-item sh">software</li>
-                      </ul>
-                      <ul class="list-group list-group-horizontal-md">
-                        <li class="list-group-item sh">Mantenimiento celular</li>
-                        <li class="list-group-item sh">Bootstrap</li>
-                        <li class="list-group-item sh"></li>
-                      </ul>
-                      </p>
-                      <p><strong>Correo:</strong>carloshernandez131697@gmail.com</p>
+
+                                            <p class="col"><a class="text-decoration-none" target="_blank" href="https://github.com/Sakamotorioma0">Perfil 1</a></p>
+                                            <p class="col"><a class="text-decoration-none" target="_blank" href="https://github.com/CarlosHdzGarcia?tab=repositories">Perfil 2</a></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--Inicio paginas -->
-          <div class="tab-pane fade" id="page-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"
-            align="center">
-            <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel"
-              style="padding-top: 5%;">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card" style="min-width: 20rem; max-width:38rem ;">
-                    <img src="rec/img/paginas/cta.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card" style="min-width: 20rem;  max-width:38rem ;">
-                    <img src="rec/img/paginas/inventario.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card" style="min-width: 20rem;  max-width:38rem ;">
-                    <img src="rec/img/paginas/Maketado.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card" style="min-width: 20rem;  max-width:38rem ;">
-                    <img src="rec/img/paginas/PaginaDr.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card's content.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
+                    <!--Inicio paginas -->
+                    <div class="tab-pane fade" id="page-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0" align="center">
+                        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding-top: 5%;">
+                            <div class="carousel-inner">
+                                <!--Pagina de EducAr-->
+                                <div class="carousel-item active">
+                                    <div class="card" style="min-width: 20rem; max-width:38rem ;">
+                                        <img src="rec/img/paginas/cta.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p><a href="https://gpb-cosmo.github.io/EducAR.github.io/" target="_blank">Ver pagina</a></p>
+                                            <p class="card-text">Pagina creada para el uso enseñanza en temas de Fisica-Mtematicas en aulas utilizando Realidad Aumentada (AR) utilizando Aframe y Java Script</p>
+                                            <p><a class="text-decoration-none" href="https://gpb-cosmo.github.io/EducAR.github.io/Apps/">Visualizaciones del Proyecto </a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Pagina de muestra-->
+                                <!--<div class="carousel-item">
+                                    <div class="card" style="min-width: 20rem;  max-width:38rem ;">
+                                        <img src="rec/img/paginas/inventario.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text"> </p>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <!--Pagina de Maquetado-->
+                                <div class="carousel-item">
+                                    <div class="card" style="min-width: 20rem;  max-width:38rem ;">
+                                        <img src="rec/img/paginas/Maketado.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p><a href="https://sakamotorioma0.github.io/Maquetado/">Ver pagina</a></p>
+                                            <p class="card-text">Maquetado de pagina utilizando bootstrap, HTMl, CSS y Js</p>
+                                            <p><a href="https://github.com/Sakamotorioma0/Maquetado">github</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Pagina de Pesonal Dra Piccinelli-->
+                                <div class="carousel-item">
+                                    <div class="card" style="min-width: 20rem;  max-width:38rem ;">
+                                        <img src="rec/img/paginas/PaginaDr.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p> <a href="https://gpb-cosmo.github.io/person/" target="_blank">ver pagina</a></p>
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-            </div>
-          </div>
-          <!--Inicio  visualizaciones -->
-          <div class="tab-pane fade" id="animaciones-tab-pane" role="tabpanel" aria-labelledby="animaciones-tab"
-            tabindex="0">
-            <div style="margin-top:2%;" class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card">
-                  <video  autoplay controls src="rec/videos/animacion.mp4"></video>
-                  <div class="card-body">
-                    <h5 class="card-title">Bosque oscuro</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
+                        </div>
+                    </div>
+                    <!--Inicio  visualizaciones -->
+                    <div class="tab-pane fade" id="animaciones-tab-pane" role="tabpanel" aria-labelledby="animaciones-tab" tabindex="0">
+                        <div style="margin-top:2%;" class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card">
+                                    <video autoplay controls src="rec/videos/animacion.mp4"></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bosque oscuro</h5>
+                                        <p class="card-text">Video de escena de noche creado con blender</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <video autoplay controls src="rec/videos/barra.mp4"></video>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Barra de negocio</h5>
+                                        <p class="card-text">Modelo proyectado para dar una idea de como se veria el armado de una barra para un negocio de bar creado con blender</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div>
+                                        <model-viewer class="contmodel" src="rec/model/three.glb" alt="Un modelo 3D" auto-rotate camera-controls background-color="#fffff0">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modelo 3D</h5>
+                                        <p class="card-text">Modelo de Arbol realizado en Blender</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div>
+                                        <iframe class="contmodel" allow="camera;" src="https://gpb-cosmo.github.io/EducAR.github.io/LeyFaraday/ARModelos/inductor/" frameborder="0"></iframe>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Visualizacion de AR</h5>
+
+                                        <p class="card-text">Visualizaciones de Realidad Aumentada por medio de un marcador. se requiere mostrar el marcador en la camara para observar el modelo</p>
+                                        <p><a href="rec/img/img/marker.png" target="_blank">Descargar Marcador</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card">
-                  <video  autoplay controls src="rec/videos/barra.mp4"></video>
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                      additional content. This content is a little bit longer.</p>
-                  </div>
-                </div>
-              </div>
+
             </div>
-          </div>
         </div>
 
-      </div>
-    </div>
+        <!--Final de pestaña -->
+    </section>
 
-    <!--Final de pestaña -->
-  </section>
+    <footer></footer>
 
-  </section>
-  <footer></footer>
+    <!--link de script boostrap-->
 
-  <!--link de script boostrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-    crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
